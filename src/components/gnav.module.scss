@@ -12,6 +12,7 @@
     color: #1c23b8;
     margin-right: 10px;
     font-size: 14px;
+    text-shadow: none;
   }
   &__btn {
     margin-left: auto;
@@ -21,5 +22,10 @@
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 14px;
+    text-shadow: none;
+    transition: 0.2s;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

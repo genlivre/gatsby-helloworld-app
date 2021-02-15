@@ -23,6 +23,9 @@ export default function Home() {
         <li><Link to="/about-css-modules/">about-css-modules.js</Link></li>
       </ul>
 
+      <h2>Turtorial 3</h2>
+      <p>☑各ページをレイアウトコンポーネントで整形する</p>
+
 
       <div><img src="https://source.unsplash.com/random/400x200" alt="" /></div>
     </Container>
