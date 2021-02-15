@@ -2,13 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import Gnav from "../components/gnav"
 import Header from "../components/header"
-
-import styles from "./index.module.scss"
+import Container from "../components/container"
 
 export default function Home() {
   return <div>
     <Gnav />
-    <div className={styles.container}>
+    <Container>
       <Header headerText="Gatsby Tutorial Playing!" />
       <p>User name is Genta.</p>
       <h2>Turtorial 1</h2>
@@ -26,6 +25,6 @@ export default function Home() {
 
 
       <div><img src="https://source.unsplash.com/random/400x200" alt="" /></div>
-    </div>
+    </Container>
   </div>
 }
