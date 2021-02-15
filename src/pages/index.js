@@ -1,14 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
+import Gnav from "../components/gnav"
 import Header from "../components/header"
 
+import styles from "./index.module.scss"
+
 export default function Home() {
-  return <div style={{ color: `purple`, fontSize: `72px` }}>
-    <Link to="/contact/">Contact</Link>
-    <Link to="/about/">About</Link>
-    <a href="https://github.com/genlivre" target="_blank">github</a>
-    <Header headerText="Gatsby Testing Page!" />
-    <p>User name is Genta.</p>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
+  return <div>
+    <Gnav />
+    <div className={styles.container}>
+      <Header headerText="Gatsby Tutorial Playing!" />
+      <p>User name is Genta.</p>
+      <h2>Turtorial 1</h2>
+      <p>☑ページの追加</p>
+      <ul>
+        <li><Link to="/contact/">Contact</Link></li>
+        <li><Link to="/about/">About</Link></li>
+      </ul>
+
+      <h2>Turtorial 2</h2>
+      <p>☑スタイルの追加方法</p>
+      <ul>
+        <li><Link to="/about-css-modules/">about-css-modules.js</Link></li>
+      </ul>
+
+
+      <div><img src="https://source.unsplash.com/random/400x200" alt="" /></div>
+    </div>
   </div>
 }
